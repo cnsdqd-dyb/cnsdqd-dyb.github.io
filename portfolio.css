@@ -1,7 +1,6 @@
 
 /* Personal portfolio: original implementation inspired by an academic portfolio hierarchy. */
-:root{--bg:#0b1114;--panel:#101b20;--text:#e6eeef;--muted:#8fa4ad;--line:#26363c;--accent:#92d4bf;--accent-soft:#18352f;color-scheme:dark}
-html[data-theme="light"]{--bg:#f7f8f5;--panel:#eef2ee;--text:#142e36;--muted:#5e747c;--line:#d5dfde;--accent:#286a57;--accent-soft:#e0ece7;color-scheme:light}
+:root{--bg:#f7f8f5;--panel:#eef2ee;--text:#142e36;--muted:#5e747c;--line:#d5dfde;--accent:#286a57;--accent-soft:#e0ece7;color-scheme:light}
 body{background:var(--bg);color:var(--text)}header{position:sticky;top:0;z-index:50;background:var(--bg);border-color:var(--line);padding-top:20px;padding-bottom:20px}
 main{position:relative}a:hover{color:var(--accent)}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}section,.work,.timeline,.honors li{border-color:var(--line)}
 .brand{color:var(--accent)}nav{align-items:center}.theme-toggle{border:1px solid var(--line);border-radius:50%;width:34px;height:34px;color:var(--text);background:transparent;cursor:pointer;font-size:18px}

@@ -1,9 +1,3 @@
-
-const themeButton=document.querySelector('.theme-toggle');
-try{const stored=localStorage.getItem('theme');if(stored==='light'||stored==='dark')document.documentElement.dataset.theme=stored;}catch{}
-function updateThemeButton(){themeButton.textContent=document.documentElement.dataset.theme==='light'?'◐':'☼';themeButton.setAttribute('aria-label',document.documentElement.dataset.theme==='light'?'Switch to dark theme':'Switch to light theme');}
-themeButton.addEventListener('click',()=>{const value=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=value;try{localStorage.setItem('theme',value);}catch{}updateThemeButton();draw();});
-updateThemeButton();
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const intro=document.querySelector('.intro');
 const statements=['Reasoning with<br><em>structure.</em>','Research grounded<br>in <em>evidence.</em>','Agents working<br><em>together.</em>'];
